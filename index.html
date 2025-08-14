@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pragya Pandey | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pragya Pandey | Portfolio </title>
+  <meta name="description" content="Portfolio of Pragya Pandey — AI/ML, Data Science, Web Development" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -11,231 +12,213 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="side-nav">
+
+  <header class="site-top">
+    <div class="topbar">
+      <strong>Pragya <span class="gradient-text">Portfolio</span></strong>
+      <button id="themeBtn" class="theme-toggle" title="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i> Theme</button>
+    </div>
+  </header>
+
+  <nav class="side-nav" aria-label="Section navigation">
     <ul>
-      <li><a href="#home" data-tooltip="Home"></a></li>
+      <li><a href="#home" data-tooltip="Home" class="active"></a></li>
       <li><a href="#skills" data-tooltip="Skills"></a></li>
       <li><a href="#education" data-tooltip="Education"></a></li>
       <li><a href="#internships" data-tooltip="Internships"></a></li>
       <li><a href="#projects" data-tooltip="Projects"></a></li>
       <li><a href="#certifications" data-tooltip="Certifications"></a></li>
-      <li><a href="#connect" data-tooltip="Contact"></a></li>
+      <li><a href="#contact" data-tooltip="Contact"></a></li>
     </ul>
   </nav>
 
-  <div class="background-aurora"></div>
-
   <main class="container">
-
-    <header class="profile-header" id="home">
-      <img src="https://i.ibb.co/v4gsksYZ/IMG-20241006-155300-3-1.jpg" alt="Pragya Pandey" class="profile-picture" />
-      <div class="profile-info">
-        <h1 class="profile-name">PRAGYA PANDEY</h1>
-        <p class="profile-tagline">B.Tech Student in Computer Science & Technology</p>
-        <div class="profile-about">
-          <p>
-            I specialize in Artificial Intelligence and Data Science, with hands-on experience in full-stack development and machine learning. I am eager to apply my skills in a dynamic tech environment.
-          </p>
+    <header class="card profile reveal" id="home" style="padding:1.25rem;">
+      <img class="profile-picture" alt="Pragya Pandey" src="https://i.ibb.co/v4gsksYZ/IMG-20241006-155300-3-1.jpg" loading="lazy" />
+      <div>
+        <h1 class="profile-name gradient-text">PRAGYA PANDEY</h1>
+        <p class="tag">B.Tech Student in Computer Science &amp; Technology</p>
+        <p class="about">I specialize in Artificial Intelligence and Data Science, with hands‑on experience in full‑stack development and machine learning. I’m eager to apply my skills in a dynamic tech environment.</p>
+        <div class="social">
+          <a class="btn" href="https://www.linkedin.com/in/pragya-pandey-1a8b78256/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="btn" href="https://github.com/PragyaP04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn" href="mailto:pragyapandey801@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a class="btn" href="https://i.ibb.co/fYpxq7mH/Pragya-Pandey-res.jpg" target="_blank"><i class="fa-solid fa-file"></i> View Resume</a>
         </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/pragya-pandey-1a8b78256/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/PragyaP04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="mailto:pragyapandey801@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-        <a href="https://i.ibb.co/fYpxq7mH/Pragya-Pandey-res.jpg" target="_blank" class="view-resume-link">
-          View Resume <i class="fas fa-arrow-right"></i>
-        </a>
       </div>
     </header>
 
-    <section class="card-section" id="skills">
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="grid-layout">
+    <section class="section reveal" id="skills">
+      <h2 class="gradient-text">Tech Stack</h2>
+      <div class="skill-grid">
         <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <strong>Languages</strong>
-          <span>C, C++, Python</span>
+          <div class="skill-head"><i class="fas fa-code" style="color:var(--primary)"></i><strong class="gradient-text"> Languages</strong></div>
+          <p>C, C++, Python</p>
         </div>
         <div class="skill-card">
-          <i class="fas fa-brain"></i>
-          <strong>AI/ML Frameworks</strong>
-          <span>NumPy, Pandas, Scikit-learn</span>
+          <div class="skill-head"><i class="fas fa-brain" style="color:var(--primary)"></i><strong class="gradient-text"> AI/ML Frameworks</strong></div>
+          <p>NumPy, Pandas, Scikit-learn</p>
         </div>
         <div class="skill-card">
-          <i class="fas fa-laptop-code"></i>
-          <strong>Web & Tools</strong>
-          <span>HTML, CSS, JavaScript, IBM Watson Studio</span>
+          <div class="skill-head"><i class="fas fa-laptop-code" style="color:var(--primary)"></i><strong class="gradient-text"> Web & Tools</strong></div>
+          <p>HTML, CSS, JavaScript, IBM Watson Studio</p>
         </div>
         <div class="skill-card">
-          <i class="fas fa-database"></i>
-          <strong>Core Subjects</strong>
-          <span>DSA, DBMS, OOP</span>
+          <div class="skill-head"><i class="fas fa-database" style="color:var(--primary)"></i><strong class="gradient-text"> Core Subjects</strong></div>
+          <p>DSA, DBMS, OOP</p>
         </div>
       </div>
     </section>
 
-    <section class="card-section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="grid-layout">
-        <div class="edu-card">
-          <h4>Bachelor of Technology, CST</h4>
-          <p>University of Engineering and Management</p>
-          <span>2022 – 2026 | 8.37 CGPA (until 6th sem)</span>
+    <section class="section reveal" id="education">
+      <h2 class="gradient-text">Education</h2>
+      <div class="grid cols-3">
+        <div class="tile"><h3>B.Tech, CST</h3><p>University of Engineering and Management</p><p>2022–2026 | 8.37 CGPA (till 6th sem)</p></div>
+        <div class="tile"><h3>WBCHSE (Class XII)</h3><p>National High School</p><p>2020–2022 | 79.2%</p></div>
+        <div class="tile"><h3>WBBSE (Class X)</h3><p>National High School</p><p>2011–2020 | 74%</p></div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="internships">
+      <h2 class="gradient-text">Internships</h2>
+      <div class="grid">
+        <div class="card tile" style="display:grid; grid-template-columns:1fr 220px; gap:1rem; align-items:center">
+          <div>
+            <h3>IBM SkillsBuild Internship</h3>
+            <p>4‑week program on AI‑ML focusing on predictive models, NLP chatbots with Watsonx, and API integration. (10 Jun 2024 – 6 Jul 2024)</p>
+          </div>
+          <a href="https://i.ibb.co/9mQ2GZp0/Screenshot-2025-07-23-222209.png" target="_blank"><img src="https://i.ibb.co/9mQ2GZp0/Screenshot-2025-07-23-222209.png" alt="IBM Internship Certificate" loading="lazy" style="width:100%; height:150px; object-fit:cover; border-radius:12px; border:1px solid hsl(220 15% 25%)"></a>
         </div>
-        <div class="edu-card">
-          <h4>WBCHSE (Class XII)</h4>
-          <p>National High School</p>
-          <span>2020 – 2022 | 79.2%</span>
+        <div class="card tile" style="display:grid; grid-template-columns:1fr 220px; gap:1rem; align-items:center">
+          <div>
+            <h3>AICTE approved EDUNET INTERNSHIP</h3>
+            <p>Virtual internship on AI and Data Analytics focused on Green Skills. (28 Apr 2025 – 26 May 2025)</p>
+          </div>
+          <a href="https://i.ibb.co/p6GCc3gx/Screenshot-2025-07-23-222147.png" target="_blank"><img src="https://i.ibb.co/p6GCc3gx/Screenshot-2025-07-23-222147.png" alt="AICTE Edunet" loading="lazy" style="width:100%; height:150px; object-fit:cover; border-radius:12px; border:1px solid hsl(220 15% 25%)"></a>
         </div>
-        <div class="edu-card">
-          <h4>WBBSE (Class X)</h4>
-          <p>National High School</p>
-          <span>2011 – 2020 | 74%</span>
+        <div class="card tile" style="display:grid; grid-template-columns:1fr 220px; gap:1rem; align-items:center">
+          <div>
+            <h3>PwC Launchpad Program</h3>
+            <p>Professional development in cybersecurity and risk assurance with exposure to industry‑standard tools and methodologies.</p>
+          </div>
+          <a href="https://i.ibb.co/Q7XVByR8/Pragya-Pandey.jpg" target="_blank"><img src="https://i.ibb.co/Q7XVByR8/Pragya-Pandey.jpg" alt="PwC Launchpad" loading="lazy" style="width:100%; height:150px; object-fit:cover; border-radius:12px; border:1px solid hsl(220 15% 25%)"></a>
+        </div>
+        <div class="card tile" style="display:grid; grid-template-columns:1fr 220px; gap:1rem; align-items:center">
+          <div>
+            <h3>AI &amp; Data Analytics Internship (Green Skills)</h3>
+            <p>AICTE × Shell India × Edunet Foundation. (16 Jun 2025 – 16 Jul 2025)</p>
+          </div>
+          <a href="https://i.ibb.co/j9gphtFH/Pragya-Pandey-AICTE-Certificate-2.jpg" target="_blank"><img src="https://i.ibb.co/j9gphtFH/Pragya-Pandey-AICTE-Certificate-2.jpg" alt="AICTE Green Skills" loading="lazy" style="width:100%; height:150px; object-fit:cover; border-radius:12px; border:1px solid hsl(220 15% 25%)"></a>
         </div>
       </div>
     </section>
 
-    <section class="card-section" id="internships">
-      <h2 class="section-title">Internships</h2>
-      <div class="featured-certificate">
-        <div class="certificate-info">
-          <h3>IBM SkillsBuild Internship</h3>
-          <p>Successfully completed a 4-week program on AI-ML, focusing on predictive models, NLP chatbots with Watsonx, and API integration, from 10th June to 6th July 2024.</p>
-        </div>
-        <a href="https://i.ibb.co/9mQ2GZp0/Screenshot-2025-07-23-222209.png" target="_blank" class="certificate-image">
-          <img src="https://i.ibb.co/9mQ2GZp0/Screenshot-2025-07-23-222209.png" alt="IBM Internship Certificate" />
-        </a>
+    <section class="section reveal" id="projects">
+      <h2 class="gradient-text">Projects</h2>
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="ai">AI‑ML</button>
+        <button class="chip" data-filter="ds">Data Science</button>
+        <button class="chip" data-filter="web">Web Dev</button>
       </div>
-
-      <div class="featured-certificate">
-        <div class="certificate-info">
-          <h3>AICTE approved EDUNET INTERNSHIP</h3>
-          <p>Completed a 4-week virtual internship on Artificial Intelligence and Data Analytics focused on Green Skills, from 28th April 2025 to 26th May 2025.</p>
-        </div>
-        <a href="https://i.ibb.co/p6GCc3gx/Screenshot-2025-07-23-222147.png" target="_blank" class="certificate-image">
-          <img src="https://i.ibb.co/p6GCc3gx/Screenshot-2025-07-23-222147.png" alt="AICTE Edunet Internship Certificate" />
-        </a>
-      </div>
-
-      <div class="featured-certificate">
-        <div class="certificate-info">
-          <h3>PwC Launchpad Program</h3>
-          <p>A professional development program designed to build digital skills in cybersecurity and risk assurance, providing exposure to PwC's industry-standard tools and methodologies.</p>
-        </div>
-        <a href="https://i.ibb.co/Q7XVByR8/Pragya-Pandey.jpg" target="_blank" class="certificate-image">
-          <img src="https://i.ibb.co/Q7XVByR8/Pragya-Pandey.jpg" alt="PwC Launchpad Certificate" />
-        </a>
-      </div>
-
-      <div class="featured-certificate">
-        <div class="certificate-info">
-          <h3>AI & Data Analytics Internship (Green Skills)</h3>
-          <p>Completed a 4-week virtual internship on Artificial Intelligence and Data Analytics focused on Green Skills, organized by AICTE, Shell India Markets Private Limited and Edunet Foundation from 16th June 2025 to 16th July 2025.</p>
-        </div>
-        <a href="https://i.ibb.co/j9gphtFH/Pragya-Pandey-AICTE-Certificate-2.jpg" target="_blank" class="certificate-image">
-          <img src="https://i.ibb.co/j9gphtFH/Pragya-Pandey-AICTE-Certificate-2.jpg" alt="AICTE Green Skills Internship Certificate" />
-        </a>
-      </div>
-    </section>
-
-    <section class="card-section" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="grid-layout">
-        <div class="project-card">
+      <div class="grid cols-3" id="projectGrid">
+        <div class="tile project" data-tags="web ai">
           <h3>IntelliLearn</h3>
-          <p>An NLP-powered chatbot for educational purposes with a front-end and back-end integration.</p>
-          <a href="https://github.com/PragyaP04/IntelliLearn" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+          <p>An NLP‑powered chatbot for educational assistance with front‑end and back‑end integration.</p>
+          <div><a href="https://github.com/PragyaP04/IntelliLearn" target="_blank">View Code <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="more" data-modal="intellilearn">More</a></div>
         </div>
-        <div class="project-card">
+        <div class="tile project" data-tags="ai ds">
           <h3>Fake News Detection</h3>
-          <p>Developed a machine learning model using NLP techniques to classify news articles as fake or real.</p>
-          <a href="https://github.com/PragyaP04/Fake-News-Detection-" target="_blank">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+          <p>ML model using NLP techniques to classify news articles as fake or real.</p>
+          <div><a href="https://github.com/PragyaP04/Fake-News-Detection-" target="_blank">GitHub Repo <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="more" data-modal="fnd">More</a></div>
         </div>
-        <div class="project-card">
+        <div class="tile project" data-tags="ds">
           <h3>Bank Customer Churn Prediction</h3>
-          <p>Built a model to predict which customers are likely to leave a bank, providing valuable business insights.</p>
-          <a href="https://github.com/PragyaP04/Bank_Customer_Churn_Prediction" target="_blank">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+          <p>Predict customers likely to leave a bank; delivered explainable insights.</p>
+          <div><a href="https://github.com/PragyaP04/Bank_Customer_Churn_Prediction" target="_blank">GitHub Repo <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="more" data-modal="churn">More</a></div>
         </div>
-        <div class="project-card">
+        <div class="tile project" data-tags="ds">
           <h3>GHG Emission Predictor</h3>
-          <p>Created a machine learning model to predict greenhouse gas emissions based on various environmental factors.</p>
-          <a href="https://github.com/PragyaP04/GHG_EMISSION_PREDICTOR" target="_blank">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+          <p>Predict greenhouse gas emissions from energy &amp; industry datasets.</p>
+          <div><a href="https://github.com/PragyaP04/GHG_EMISSION_PREDICTOR" target="_blank">GitHub Repo <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="more" data-modal="ghg">More</a></div>
         </div>
-        <div class="project-card">
+        <div class="tile project" data-tags="ai">
           <h3>Plant Disease Detection System</h3>
-          <p>A deep learning-based system to detect plant diseases from images. Utilized CNNs with TensorFlow and Keras.</p>
-          <a href="https://github.com/PragyaP04/PLANT_DISEASE_DETECTION_SYSTEM" target="_blank">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+          <p>Deep‑learning CNN that detects plant leaf diseases.</p>
+          <div><a href="https://github.com/PragyaP04/PLANT_DISEASE_DETECTION_SYSTEM" target="_blank">GitHub Repo <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="more" data-modal="plant">More</a></div>
         </div>
       </div>
-      
-      <div class="more-projects-list">
+
+      <div class="tile" style="margin-top:1rem;">
         <h3>Other Noteworthy Projects</h3>
         <ul>
-          <li>Multi-Disease Prediction System</li>
+          <li>Multi‑Disease Prediction System</li>
           <li>House Price Prediction</li>
-          <li>Portfolio Website (This one!)</li>
+          <li>Portfolio Website (this site)</li>
         </ul>
       </div>
     </section>
 
-    <section class="card-section" id="certifications">
-      <h2 class="section-title">Certifications</h2>
-      <div class="grid-layout">
-        <a href="https://i.ibb.co/Kj4xQHMj/Data-Analytics-job-simulation.jpg" target="_blank" class="card-link-wrapper">
-          <div class="project-card">
+    <div id="modal" class="card" style="position:fixed; inset:0; display:none; place-items:center; background:hsl(220 15% 8%/.4); backdrop-filter: blur(2px);">
+      <div class="tile" style="max-width:680px; width:92vw; background:hsl(var(--card));">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem">
+          <strong id="m-title"></strong>
+          <button id="m-close" class="chip">Close</button>
+        </div>
+        <p id="m-body" style="margin-top:.5rem"></p>
+      </div>
+    </div>
+
+    <section class="section reveal" id="certifications">
+      <h2 class="gradient-text">Certifications</h2>
+      <div class="carousel">
+        <div class="track" id="certTrack">
+          <a class="tile card" href="https://i.ibb.co/Kj4xQHMj/Data-Analytics-job-simulation.jpg" target="_blank">
             <h3>Data Analytics Job Simulation</h3>
-            <p>Completed practical tasks in data analysis and forensic technology with Deloitte.</p>
-          </div>
-        </a>
-        <a href="https://i.ibb.co/whWyr5Lr/Generative-AI-with-LLM.jpg" target="_blank" class="card-link-wrapper">
-          <div class="project-card">
+            <p>Deloitte • practical analysis & forensic tech tasks.</p>
+          </a>
+          <a class="tile card" href="https://i.ibb.co/whWyr5Lr/Generative-AI-with-LLM.jpg" target="_blank">
             <h3>Generative AI with Large Language Models</h3>
-            <p>An online course authorized by DeepLearning.AI and Amazon Web Services, offered through Coursera.</p>
-          </div>
-        </a>
-        <a href="https://i.ibb.co/CK8Qq15Y/Cybersecurity-analyst-job-simulation.jpg" target="_blank" class="card-link-wrapper">
-          <div class="project-card">
+            <p>DeepLearning.AI × AWS • Coursera.</p>
+          </a>
+          <a class="tile card" href="https://i.ibb.co/CK8Qq15Y/Cybersecurity-analyst-job-simulation.jpg" target="_blank">
             <h3>Cybersecurity Analyst Job Simulation</h3>
-            <p>Completed practical tasks with TATA in Identity and Access Management (IAM) fundamentals and strategy assessment.</p>
-          </div>
-        </a>
+            <p>TATA • IAM fundamentals & strategy.</p>
+          </a>
+        </div>
+        <div class="nav">
+          <button id="prevCert" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="nextCert" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
       </div>
     </section>
 
-    <section class="card-section contact-form-section" id="connect">
-      <h2 class="section-title">Get In Touch</h2>
+    <section class="section reveal" id="contact">
+      <h2 class="gradient-text">Get In Touch</h2>
       <form class="contact-form" action="https://formsubmit.co/pragyapandey801@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
         <input type="hidden" name="_captcha" value="false" />
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button class="submit" type="submit">Send Message</button>
       </form>
     </section>
 
-    <footer>
-      <div class="footer-contact-bar">
-        <span class="footer-item"><i class="fas fa-user"></i> Pragya Pandey</span>
-        <a href="mailto:pragyapandey801@gmail.com" class="footer-item"><i class="fas fa-envelope"></i> pragyapandey801@gmail.com</a>
-        <span class="footer-item"><i class="fas fa-phone"></i> +91 9163722801</span>
-      </div>
+    <footer class="reveal">
+      <div>© <span id="year"></span> Pragya Pandey • <a href="mailto:pragyapandey801@gmail.com">pragyapandey801@gmail.com</a> • <a href="tel:+919163722801">+91 9163722801</a></div>
     </footer>
   </main>
 
-  <script src="script.js"></script>
-
   <button id="chatbot-toggle" title="Ask me anything!">💬</button>
-
-  <div id="chatbot-window" class="hidden">
-    <div id="chatbot-header">
-      <span>Ask Pragya's AI Assistant</span>
-      <button id="chatbot-close">✖</button>
-    </div>
-    <div id="chatbot-messages"></div>
-    <div id="chatbot-input-area">
-      <input type="text" id="chatbot-input" placeholder="Type your message..." />
-      <button id="chatbot-send">Send</button>
+  <div id="chatbot" class="card">
+    <div id="bot-head"><strong>Pragya's AI Assistant</strong> <button id="bot-close" aria-label="Close">✖</button></div>
+    <div id="bot-msgs" aria-live="polite"></div>
+    <div id="bot-input">
+      <input id="bot-text" type="text" placeholder="Ask about skills, projects, education..." style="flex:1; background:transparent; color:inherit; border:1px solid hsl(220 15% 25%); border-radius:10px; padding:.6rem .8rem" />
+      <button id="bot-send" class="btn" type="button">Send</button>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
